@@ -5,8 +5,6 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 
-
-
 export const connectDB = async () => {
     try {
         if (process.env.MONGO_URI){
@@ -17,7 +15,8 @@ export const connectDB = async () => {
         console.error(`Error : ${error?.message}`);
         process.exit(1); // 1 means fail 0 means success
     }
-
-
-
 } 
+
+
+
+
